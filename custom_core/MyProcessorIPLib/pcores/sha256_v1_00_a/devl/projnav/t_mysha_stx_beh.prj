@@ -1,0 +1,5 @@
+vhdl isim_temp "romk.vhd"
+vhdl isim_temp "c6b.vhd"
+vhdl isim_temp "c4b.vhd"
+vhdl isim_temp "mysha.vhd"
+vhdl isim_temp "t_mysha.vhd"

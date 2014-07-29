@@ -1,0 +1,524 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_hdmi_tx_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc7z010clg400-2
+Output File Name                   : "../implementation/system_hdmi_tx_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_hdmi_tx_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/SerializerN_1.vhd" into library hdmi_tx_v1_00_a
+Parsing entity <SerializerN_1>.
+Parsing architecture <Behavioral> of entity <serializern_1>.
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/TMDSEncoder.vhd" into library hdmi_tx_v1_00_a
+Parsing entity <TMDSEncoder>.
+Parsing architecture <Behavioral> of entity <tmdsencoder>.
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/DVITransmitter.vhd" into library hdmi_tx_v1_00_a
+Parsing entity <DVITransmitter>.
+Parsing architecture <Behavioral> of entity <dvitransmitter>.
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/hdmi_tx.vhd" into library hdmi_tx_v1_00_a
+Parsing entity <hdmi_tx>.
+Parsing architecture <Behavioral> of entity <hdmi_tx>.
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/hdl/system_hdmi_tx_0_wrapper.vhd" into library work
+Parsing entity <system_hdmi_tx_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_hdmi_tx_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_hdmi_tx_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <hdmi_tx> (architecture <Behavioral>) from library <hdmi_tx_v1_00_a>.
+
+Elaborating entity <DVITransmitter> (architecture <Behavioral>) with generics from library <hdmi_tx_v1_00_a>.
+WARNING:HDLCompiler:321 - "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/DVITransmitter.vhd" Line 127: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/DVITransmitter.vhd" Line 189: Comparison between arrays of unequal length always returns FALSE.
+
+Elaborating entity <TMDSEncoder> (architecture <Behavioral>) from library <hdmi_tx_v1_00_a>.
+
+Elaborating entity <SerializerN_1> (architecture <Behavioral>) with generics from library <hdmi_tx_v1_00_a>.
+WARNING:HDLCompiler:321 - "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/SerializerN_1.vhd" Line 94: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/SerializerN_1.vhd" Line 204: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:634 - "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/DVITransmitter.vhd" Line 98: Net <PClk_x2> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_hdmi_tx_0_wrapper>.
+    Related source file is "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/hdl/system_hdmi_tx_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_hdmi_tx_0_wrapper> synthesized.
+
+Synthesizing Unit <hdmi_tx>.
+    Related source file is "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/hdmi_tx.vhd".
+    Summary:
+	no macro.
+Unit <hdmi_tx> synthesized.
+
+Synthesizing Unit <DVITransmitter>.
+    Related source file is "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/DVITransmitter.vhd".
+        FAMILY = "artix7"
+WARNING:Xst:653 - Signal <PClk_x2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <SerStb> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <DVITransmitter> synthesized.
+
+Synthesizing Unit <TMDSEncoder>.
+    Related source file is "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/TMDSEncoder.vhd".
+WARNING:Xst:647 - Input <RST_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit register for signal <n1_d>.
+    Found 8-bit register for signal <d_d>.
+    Found 1-bit register for signal <c0_d>.
+    Found 1-bit register for signal <c1_d>.
+    Found 5-bit register for signal <n1_q_m>.
+    Found 5-bit register for signal <n0_q_m>.
+    Found 9-bit register for signal <q_m_d>.
+    Found 1-bit register for signal <c0_dd>.
+    Found 1-bit register for signal <c1_dd>.
+    Found 1-bit register for signal <de_dd>.
+    Found 5-bit register for signal <cnt_t_1>.
+    Found 10-bit register for signal <q_out_d>.
+    Found 1-bit register for signal <de_d>.
+    Found 5-bit adder for signal <n0210> created at line 89.
+    Found 5-bit adder for signal <n0213> created at line 89.
+    Found 5-bit adder for signal <n0216> created at line 89.
+    Found 5-bit adder for signal <n0219> created at line 89.
+    Found 5-bit adder for signal <n0222> created at line 89.
+    Found 5-bit adder for signal <n0225> created at line 89.
+    Found 5-bit adder for signal <GND_9_o_GND_9_o_add_7_OUT> created at line 89.
+    Found 5-bit adder for signal <n0232> created at line 117.
+    Found 5-bit adder for signal <n0235> created at line 117.
+    Found 5-bit adder for signal <n0238> created at line 117.
+    Found 5-bit adder for signal <n0241> created at line 117.
+    Found 5-bit adder for signal <n0244> created at line 117.
+    Found 5-bit adder for signal <n0247> created at line 117.
+    Found 5-bit adder for signal <int_n1_q_m> created at line 117.
+    Found 5-bit adder for signal <n0253> created at line 152.
+    Found 5-bit adder for signal <cnt_t_1[4]_dc_bias[4]_add_41_OUT> created at line 152.
+    Found 5-bit adder for signal <cnt_t_1[4]_dc_bias[4]_add_45_OUT> created at line 150.
+    Found 5-bit subtractor for signal <GND_9_o_int_n1_q_m[4]_sub_22_OUT<4:0>> created at line 122.
+    Found 5-bit subtractor for signal <dc_bias> created at line 75.
+    Found 5-bit subtractor for signal <cnt_t_1[4]_GND_9_o_sub_39_OUT<4:0>> created at line 153.
+    Found 5-bit subtractor for signal <cnt_t_1[4]_dc_bias[4]_sub_40_OUT<4:0>> created at line 153.
+    Found 5-bit subtractor for signal <cnt_t_1[4]_dc_bias[4]_sub_44_OUT<4:0>> created at line 151.
+    Found 5-bit comparator greater for signal <n1_d[4]_GND_9_o_LessThan_11_o> created at line 111
+    Found 5-bit comparator equal for signal <n1_q_m[4]_n0_q_m[4]_equal_27_o> created at line 130
+    Found 5-bit comparator greater for signal <cnt_t_1[4]_GND_9_o_LessThan_28_o> created at line 132
+    Found 5-bit comparator greater for signal <n1_q_m[4]_n0_q_m[4]_LessThan_29_o> created at line 132
+    Found 5-bit comparator greater for signal <GND_9_o_cnt_t_1[4]_LessThan_30_o> created at line 133
+    Found 5-bit comparator greater for signal <n0_q_m[4]_n1_q_m[4]_LessThan_31_o> created at line 133
+    Summary:
+	inferred  22 Adder/Subtractor(s).
+	inferred  53 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <TMDSEncoder> synthesized.
+
+Synthesizing Unit <SerializerN_1>.
+    Related source file is "/home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/SerializerN_1.vhd".
+        N = 10
+        FAMILY = "artix7"
+WARNING:Xst:647 - Input <CLKDIV_X2_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SERSTB_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <int_rst>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <SerializerN_1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 66
+ 5-bit adder                                           : 51
+ 5-bit subtractor                                      : 15
+# Registers                                            : 43
+ 1-bit register                                        : 22
+ 10-bit register                                       : 3
+ 5-bit register                                        : 12
+ 8-bit register                                        : 3
+ 9-bit register                                        : 3
+# Comparators                                          : 18
+ 5-bit comparator equal                                : 3
+ 5-bit comparator greater                              : 15
+# Multiplexers                                         : 96
+ 1-bit 2-to-1 multiplexer                              : 78
+ 10-bit 2-to-1 multiplexer                             : 6
+ 5-bit 2-to-1 multiplexer                              : 9
+ 9-bit 2-to-1 multiplexer                              : 3
+# Xors                                                 : 42
+ 1-bit xor2                                            : 42
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <TMDSEncoder>.
+The following registers are absorbed into accumulator <cnt_t_1>: 1 register on signal <cnt_t_1>.
+	The following adders/subtractors are grouped into adder tree <Madd_int_n1_q_m_Madd1> :
+ 	<Madd_n0238_Madd> in block <TMDSEncoder>, 	<Madd_n0244_Madd> in block <TMDSEncoder>, 	<Madd_int_n1_q_m_Madd> in block <TMDSEncoder>.
+	The following adders/subtractors are grouped into adder tree <Madd_GND_9_o_GND_9_o_add_7_OUT_Madd1> :
+ 	<Madd_n0216_Madd> in block <TMDSEncoder>, 	<Madd_n0222_Madd> in block <TMDSEncoder>, 	<Madd_GND_9_o_GND_9_o_add_7_OUT_Madd> in block <TMDSEncoder>.
+Unit <TMDSEncoder> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 27
+ 5-bit adder                                           : 12
+ 5-bit subtractor                                      : 15
+# Adder Trees                                          : 6
+ 5-bit / 4-inputs adder tree                           : 6
+# Accumulators                                         : 3
+ 5-bit up loadable accumulator                         : 3
+# Registers                                            : 148
+ Flip-Flops                                            : 148
+# Comparators                                          : 18
+ 5-bit comparator equal                                : 3
+ 5-bit comparator greater                              : 15
+# Multiplexers                                         : 93
+ 1-bit 2-to-1 multiplexer                              : 78
+ 10-bit 2-to-1 multiplexer                             : 6
+ 5-bit 2-to-1 multiplexer                              : 6
+ 9-bit 2-to-1 multiplexer                              : 3
+# Xors                                                 : 42
+ 1-bit xor2                                            : 42
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_d0_serializer_10_1/int_rst> in Unit <system_hdmi_tx_0_wrapper> is equivalent to the following 3 FFs/Latches, which will be removed : <hdmi_tx_0/Inst_DVITransmitter/Inst_d1_serializer_10_1/int_rst> <hdmi_tx_0/Inst_DVITransmitter/Inst_d2_serializer_10_1/int_rst> <hdmi_tx_0/Inst_DVITransmitter/Inst_clk_serializer_10_1/int_rst> 
+WARNING:Xst:1710 - FF/Latch <n1_d_4> (without init value) has a constant value of 0 in block <TMDSEncoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <n1_q_m_4> (without init value) has a constant value of 0 in block <TMDSEncoder>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <n1_q_m_0> in Unit <TMDSEncoder> is equivalent to the following FF/Latch, which will be removed : <n0_q_m_0> 
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <n1_q_m_0> is unconnected in block <TMDSEncoder>.
+
+Optimizing unit <system_hdmi_tx_0_wrapper> ...
+
+Optimizing unit <TMDSEncoder> ...
+WARNING:Xst:1293 - FF/Latch <cnt_t_1_0> has a constant value of 0 in block <TMDSEncoder>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_green/c0_d> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_green/c1_d> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_red/c0_d> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_red/c1_d> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_green/c1_dd> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_green/c0_dd> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_red/c1_dd> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_red/c0_dd> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n0_q_m_4> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_green/n0_q_m_4> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_red/n0_q_m_4> (without init value) has a constant value of 0 in block <system_hdmi_tx_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/de_dd> in Unit <system_hdmi_tx_0_wrapper> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_green/de_dd> <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_red/de_dd> 
+INFO:Xst:2261 - The FF/Latch <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/de_d> in Unit <system_hdmi_tx_0_wrapper> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_green/de_d> <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_red/de_d> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_hdmi_tx_0_wrapper, actual ratio is 1.
+
+Final Macro Processing ...
+
+Processing Unit <system_hdmi_tx_0_wrapper> :
+	Found 2-bit shift register for signal <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/de_dd>.
+	Found 2-bit shift register for signal <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/c1_dd>.
+	Found 2-bit shift register for signal <hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/c0_dd>.
+Unit <system_hdmi_tx_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 124
+ Flip-Flops                                            : 124
+# Shift Registers                                      : 3
+ 2-bit shift register                                  : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_hdmi_tx_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 282
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 33
+#      LUT3                        : 26
+#      LUT4                        : 42
+#      LUT5                        : 75
+#      LUT6                        : 103
+#      VCC                         : 1
+# FlipFlops/Latches                : 127
+#      FD                          : 81
+#      FDE                         : 3
+#      FDP                         : 1
+#      FDR                         : 27
+#      FDS                         : 15
+# Shift Registers                  : 3
+#      SRLC16E                     : 3
+# IO Buffers                       : 4
+#      OBUFDS                      : 4
+# Others                           : 8
+#      OSERDESE2                   : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z010clg400-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             127  out of  35200     0%  
+ Number of Slice LUTs:                  283  out of  17600     1%  
+    Number used as Logic:               280  out of  17600     1%  
+    Number used as Memory:                3  out of   6000     0%  
+       Number used as SRL:                3
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    308
+   Number with an unused Flip Flop:     181  out of    308    58%  
+   Number with an unused LUT:            25  out of    308     8%  
+   Number of fully used LUT-FF pairs:   102  out of    308    33%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          39
+ Number of bonded IOBs:                   8  out of    100     8%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                              | Load  |
+-----------------------------------+--------------------------------------------------------------------+-------+
+PXLCLK_I                           | NONE(hdmi_tx_0/Inst_DVITransmitter/Inst_d0_serializer_10_1/int_rst)| 130   |
+-----------------------------------+--------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.683ns (Maximum Frequency: 372.710MHz)
+   Minimum input arrival time before clock: 1.469ns
+   Maximum output required time after clock: 0.614ns
+   Maximum combinational path delay: 0.339ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PXLCLK_I'
+  Clock period: 2.683ns (frequency: 372.710MHz)
+  Total number of paths / destination ports: 3682 / 132
+-------------------------------------------------------------------------
+Delay:               2.683ns (Levels of Logic = 5)
+  Source:            hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d_2 (FF)
+  Destination:       hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/cnt_t_1_4 (FF)
+  Source Clock:      PXLCLK_I rising
+  Destination Clock: PXLCLK_I rising
+
+  Data Path: hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d_2 to hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/cnt_t_1_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.236   0.608  hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d_2 (hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d_2)
+     LUT5:I0->O           12   0.043   0.411  hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d[4]_n1_d[4]_OR_6_o1 (hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d[4]_n1_d[4]_OR_6_o)
+     LUT4:I3->O            3   0.043   0.507  hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/Madd_cnt_t_1[4]_dc_bias[4]_add_41_OUT11 (hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/Madd_cnt_t_1[4]_dc_bias[4]_add_41_OUT1)
+     LUT6:I3->O            2   0.043   0.355  hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/Maccum_cnt_t_1_lut<3>2_SW0 (N20)
+     LUT6:I5->O            1   0.043   0.350  hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/Maccum_cnt_t_1_lut<3>3 (hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/Maccum_cnt_t_1_lut<3>)
+     LUT6:I5->O            1   0.043   0.000  hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/Maccum_cnt_t_1_xor<4>11 (hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/Result<4>)
+     FDR:D                    -0.000          hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/cnt_t_1_4
+    ----------------------------------------
+    Total                      2.683ns (0.451ns logic, 2.232ns route)
+                                       (16.8% logic, 83.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PXLCLK_I'
+  Total number of paths / destination ports: 251 / 40
+-------------------------------------------------------------------------
+Offset:              1.469ns (Levels of Logic = 3)
+  Source:            VGA_B<0> (PAD)
+  Destination:       hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d_2 (FF)
+  Destination Clock: PXLCLK_I rising
+
+  Data Path: VGA_B<0> to hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O            4   0.043   0.539  hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/ADDERTREE_INTERNAL_Madd_xor<0>21 (hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/ADDERTREE_INTERNAL_Madd_1)
+     LUT4:I0->O            2   0.043   0.618  hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/ADDERTREE_INTERNAL_Madd2_lut<1>1 (hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/ADDERTREE_INTERNAL_Madd2_lut<1>)
+     LUT6:I0->O            1   0.043   0.000  hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/ADDERTREE_INTERNAL_Madd2_xor<2>11 (hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/ADDERTREE_INTERNAL_Madd_22)
+     FD:D                     -0.000          hdmi_tx_0/Inst_DVITransmitter/Inst_TMDSEncoder_blue/n1_d_2
+    ----------------------------------------
+    Total                      1.469ns (0.312ns logic, 1.157ns route)
+                                       (21.2% logic, 78.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PXLCLK_I'
+  Total number of paths / destination ports: 38 / 38
+-------------------------------------------------------------------------
+Offset:              0.614ns (Levels of Logic = 0)
+  Source:            hdmi_tx_0/Inst_DVITransmitter/Inst_d0_serializer_10_1/int_rst (FF)
+  Destination:       hdmi_tx_0/Inst_DVITransmitter/Inst_d0_serializer_10_1/family_7.oserdese2_slave:RST (PAD)
+  Source Clock:      PXLCLK_I rising
+
+  Data Path: hdmi_tx_0/Inst_DVITransmitter/Inst_d0_serializer_10_1/int_rst to hdmi_tx_0/Inst_DVITransmitter/Inst_d0_serializer_10_1/family_7.oserdese2_slave:RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              8   0.236   0.378  hdmi_tx_0/Inst_DVITransmitter/Inst_d0_serializer_10_1/int_rst (hdmi_tx_0/Inst_DVITransmitter/Inst_d0_serializer_10_1/int_rst)
+    OSERDESE2:RST              0.000          hdmi_tx_0/Inst_DVITransmitter/Inst_d0_serializer_10_1/family_7.oserdese2_slave
+    ----------------------------------------
+    Total                      0.614ns (0.236ns logic, 0.378ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Delay:               0.339ns (Levels of Logic = 1)
+  Source:            hdmi_tx_0/Inst_DVITransmitter/Inst_clk_serializer_10_1/family_7.oserdese2_master:OQ (PAD)
+  Destination:       HDMI_CLK_P (PAD)
+
+  Data Path: hdmi_tx_0/Inst_DVITransmitter/Inst_clk_serializer_10_1/family_7.oserdese2_master:OQ to HDMI_CLK_P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    OSERDESE2:OQ           1   0.000   0.339  hdmi_tx_0/Inst_DVITransmitter/Inst_clk_serializer_10_1/family_7.oserdese2_master (hdmi_tx_0/Inst_DVITransmitter/Inst_clk_serializer_10_1/intDSOut)
+     OBUFDS:I->O               0.000          hdmi_tx_0/Inst_DVITransmitter/Inst_clk_serializer_10_1/io_datax_out (HDMI_CLK_P)
+    ----------------------------------------
+    Total                      0.339ns (0.000ns logic, 0.339ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PXLCLK_I
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PXLCLK_I       |    2.683|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.34 secs
+ 
+--> 
+
+
+Total memory usage is 518472 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

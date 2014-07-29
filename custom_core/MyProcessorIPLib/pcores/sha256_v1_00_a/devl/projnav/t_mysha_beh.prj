@@ -1,0 +1,5 @@
+vhdl work "romk.vhd"
+vhdl work "c6b.vhd"
+vhdl work "c4b.vhd"
+vhdl work "mysha.vhd"
+vhdl work "t_mysha.vhd"

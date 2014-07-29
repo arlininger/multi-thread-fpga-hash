@@ -1,0 +1,11 @@
+##############################################################################
+## Filename:          /home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/data/sha256_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Jul 24 19:08:09 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib axi_master_lite_v1_00_a  all 
+lib sha256_v1_00_a user_logic vhdl
+lib sha256_v1_00_a sha256 vhdl

@@ -1,0 +1,29 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha_isim_beh.exe -prj /home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha_beh.prj work.t_mysha 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/romk.vhd" into library work
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/c6b.vhd" into library work
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/c4b.vhd" into library work
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/mysha.vhd" into library work
+Parsing VHDL file "/home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96748 KB
+Fuse CPU Usage: 800 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture phy of entity c4b [c4b_default]
+Compiling architecture phy of entity c6b [c6b_default]
+Compiling architecture phy of entity romk [romk_default]
+Compiling architecture phy of entity mysha [mysha_default]
+Compiling architecture behavioral of entity t_mysha
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable /home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha_isim_beh.exe
+Fuse Memory Usage: 1717348 KB
+Fuse CPU Usage: 910 ms
+GCC CPU Usage: 470 ms

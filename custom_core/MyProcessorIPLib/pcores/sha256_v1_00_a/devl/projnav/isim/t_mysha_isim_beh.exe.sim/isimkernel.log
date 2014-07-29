@@ -1,0 +1,10 @@
+Command line:
+   t_mysha_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57014
+
+Thu Jul 24 21:03:35 2014
+
+
+ Elaboration Time: 0.03 sec

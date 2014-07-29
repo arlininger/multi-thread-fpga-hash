@@ -1,0 +1,5 @@
+vhdl hdmi_tx_v1_00_a /home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/SerializerN_1.vhd
+vhdl hdmi_tx_v1_00_a /home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/TMDSEncoder.vhd
+vhdl hdmi_tx_v1_00_a /home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/DVITransmitter.vhd
+vhdl hdmi_tx_v1_00_a /home/arlininger/FPGA/ZYBO/zybo_modified_system/source/ise/hw/pcores/hdmi_tx_v1_00_a/hdl/vhdl/hdmi_tx.vhd
+vhdl work ../hdl/system_hdmi_tx_0_wrapper.vhd

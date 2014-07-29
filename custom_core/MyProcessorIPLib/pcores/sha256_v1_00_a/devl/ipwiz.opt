@@ -1,0 +1,12 @@
+-batch 
+-create sha256 
+-ver 1.00.a 
+-dir "/home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib" 
+-lang vhdl 
+-bus axi4lite ms 
+-rst 
+-reg 32 
+-xps 
+-ise 
+-bfmsim all
+-driver 
