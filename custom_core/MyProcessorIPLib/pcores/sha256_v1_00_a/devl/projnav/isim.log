@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -view /home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/customWave.wcfg -wdb /home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha_isim_beh.wdb 
+Running: /home/arlininger/FPGA/multi-thread-fpga-hash/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -view /home/arlininger/FPGA/multi-thread-fpga-hash/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/customWave.wcfg -wdb /home/arlininger/FPGA/multi-thread-fpga-hash/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,3 +10,4 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+# exit 0

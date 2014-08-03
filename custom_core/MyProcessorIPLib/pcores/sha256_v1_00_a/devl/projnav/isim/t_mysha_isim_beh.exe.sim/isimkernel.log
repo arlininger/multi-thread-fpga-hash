@@ -2,9 +2,28 @@ Command line:
    t_mysha_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  57014
+     -socket  48780
 
-Thu Jul 24 21:03:35 2014
+Sun Aug  3 10:34:25 2014
 
 
  Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 228.659 Meg
+
+ Total Signals          : 62
+ Total Nets             : 1481
+ Total Signal Drivers   : 49
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 29
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 1965
+Total Line Count : 114
+
+ Total Simulation Time: 0.17 sec
+
+ Current Memory Usage: 304.296 Meg
+
+Sun Aug  3 10:53:57 2014
+

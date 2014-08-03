@@ -93,14 +93,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1406251101" xil_pn:in_ck="168711126851801902" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1406251101">
+    <transform xil_pn:end_ts="1407080061" xil_pn:in_ck="-4983671553503289525" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1407080060">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../hdl/vhdl/sha256.vhd"/>
       <outfile xil_pn:name="../../hdl/vhdl/user_logic.vhd"/>
       <outfile xil_pn:name="/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd"/>
@@ -122,16 +117,17 @@
       <outfile xil_pn:name="/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd"/>
       <outfile xil_pn:name="/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd"/>
       <outfile xil_pn:name="/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd"/>
+      <outfile xil_pn:name="c4b.vhd"/>
+      <outfile xil_pn:name="c6b.vhd"/>
       <outfile xil_pn:name="mysha.vhd"/>
+      <outfile xil_pn:name="romk.vhd"/>
       <outfile xil_pn:name="t_mysha.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1406251103" xil_pn:in_ck="168711126851801902" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6002486975556298320" xil_pn:start_ts="1406251101">
+    <transform xil_pn:end_ts="1407080063" xil_pn:in_ck="-4983671553503289525" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6002486975556298320" xil_pn:start_ts="1407080061">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -140,7 +136,7 @@
       <outfile xil_pn:name="t_mysha_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1406251104" xil_pn:in_ck="1483373951777495332" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7693922869908731795" xil_pn:start_ts="1406251103">
+    <transform xil_pn:end_ts="1407080063" xil_pn:in_ck="1483373951777495332" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3714039344764869323" xil_pn:start_ts="1407080063">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>

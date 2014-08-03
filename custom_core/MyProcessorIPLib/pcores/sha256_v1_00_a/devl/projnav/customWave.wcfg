@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/arlininger/FPGA/ZYBO/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha_isim_beh1.wdb" id="1" type="auto">
+      <db_ref path="/home/arlininger/FPGA/multi-thread-fpga-hash/custom_core/MyProcessorIPLib/pcores/sha256_v1_00_a/devl/projnav/t_mysha_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="numeric_std" />
             <top_module name="std_logic_1164" />
@@ -11,7 +11,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="37" />
+   <WVObjectSize size="29" />
    <wvobject fp_name="/t_mysha/m" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">m[31:0]</obj_property>
       <obj_property name="ObjectShortName">m[31:0]</obj_property>
@@ -41,76 +41,6 @@
    <wvobject fp_name="/t_mysha/rst" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/ih" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ih[31:0]</obj_property>
-      <obj_property name="ObjectShortName">ih[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/h0" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">h0[31:0]</obj_property>
-      <obj_property name="ObjectShortName">h0[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/h1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">h1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">h1[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/h2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">h2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">h2[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/h3" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">h3[31:0]</obj_property>
-      <obj_property name="ObjectShortName">h3[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/h4" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">h4[31:0]</obj_property>
-      <obj_property name="ObjectShortName">h4[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/h5" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">h5[31:0]</obj_property>
-      <obj_property name="ObjectShortName">h5[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/h6" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">h6[31:0]</obj_property>
-      <obj_property name="ObjectShortName">h6[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/h7" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">h7[31:0]</obj_property>
-      <obj_property name="ObjectShortName">h7[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/k" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">k[31:0]</obj_property>
-      <obj_property name="ObjectShortName">k[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/im" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">im[31:0]</obj_property>
-      <obj_property name="ObjectShortName">im[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/iw" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">iw[31:0]</obj_property>
-      <obj_property name="ObjectShortName">iw[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/w" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">w[31:0]</obj_property>
-      <obj_property name="ObjectShortName">w[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/t_mysha/UNT/w0" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">w0[511:0]</obj_property>
-      <obj_property name="ObjectShortName">w0[511:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/t_mysha/UNT/a" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">a[31:0]</obj_property>
@@ -150,6 +80,36 @@
    <wvobject fp_name="/t_mysha/UNT/h" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">h[31:0]</obj_property>
       <obj_property name="ObjectShortName">h[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_mysha/UNT/ih" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ih[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ih[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_mysha/UNT/k" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_mysha/UNT/im" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">im[31:0]</obj_property>
+      <obj_property name="ObjectShortName">im[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_mysha/UNT/iw" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">iw[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iw[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_mysha/UNT/w" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_mysha/UNT/w0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w0[511:0]</obj_property>
+      <obj_property name="ObjectShortName">w0[511:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/t_mysha/UNT/f0" type="array" db_ref_id="1">
